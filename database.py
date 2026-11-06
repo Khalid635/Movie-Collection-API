@@ -9,7 +9,7 @@ def init_db() -> None:
         conn.execute(
             """
             CREATE TABLE IF NOT EXISTS movies (
-                movie_id INTEGER PRIMARY KEY,
+                movie_id INTEGER PRIMARY KEY AUTOINCREMENT,
                 title    TEXT    NOT NULL,
                 director TEXT    NOT NULL,
                 genre    TEXT    NOT NULL,
